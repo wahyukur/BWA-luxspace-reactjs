@@ -1,14 +1,12 @@
 import React from 'react'
 
 import Header from 'parts/Header'
-// import Hero from 'parts/Hero'
-// import BrowseRoom from 'parts/HomePage/BrowseRoom'
-// import JustArrived from 'parts/HomePage/JustArrived'
-import Clients from 'parts/Clients'
 import Sitemap from 'parts/Sitemap'
 import Footer from 'parts/Footer'
 
 import Breadcrumb from 'components/Breadcrumb'
+import ProductDetails from 'parts/Details/ProductDetails'
+import Suggestion from 'parts/Details/Suggestion'
 
 export default function Details(props) {
   return (
@@ -20,7 +18,9 @@ export default function Details(props) {
             { url: "/categories/91231/products/7888", name: "Details" },
         ]}></Breadcrumb>
         
-        <Clients></Clients>
+        <ProductDetails></ProductDetails>
+        <Suggestion></Suggestion>
+        
         <Sitemap></Sitemap>
         <Footer></Footer>
     </div>
